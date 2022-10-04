@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 
 import AppLevelContext from './context/AppLevelContext'
 import {useContext, useEffect} from 'react'
+import Agents from './pages/Agents'
 
 function App() {
   
@@ -24,7 +25,8 @@ function App() {
         <Navbar/>
       </header>
       <Routes>
-        <Route path='/' element={<Home agents = {agents} />}/>
+        <Route path='/' element={<Home  />}/>
+        <Route path='/agents' element={<Agents agents = {agents}/>}/>
         <Route path='/weapons' element={<Weapons/>}/>
         <Route path='/maps' element={<Maps/>}/>
       </Routes>

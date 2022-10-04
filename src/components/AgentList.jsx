@@ -7,9 +7,9 @@ function AgentList() {
   return (
     <div className='container mt-4 mb-4 text-center' >
         <div className='row'>
-            {agents.map(agent =>(
+            {agents.map((agent, index) =>(
                 
-            <AgentCard agent = {agent} />
+            <AgentCard agent = {agent} index={index} />
         ))}
             
         

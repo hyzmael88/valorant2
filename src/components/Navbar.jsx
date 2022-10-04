@@ -8,7 +8,8 @@ function Navbar() {
     <div className="navbar">
         <ul>
             <img src={Logo} className="logo"/>
-            <li><Link to="/" className='link'>Agentes</Link></li>
+            <li><Link to="/" className='link'>Home</Link></li>
+            <li><Link to="/agents" className='link'>Agentes</Link></li>
             <li><Link to="/weapons"className='link'>Armas</Link></li>
             <li><Link to="/maps"className='link'>Mapas</Link></li>
         </ul>
