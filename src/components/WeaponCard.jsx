@@ -8,8 +8,14 @@ import WeaponFooter from "./WeaponFooter";
 function WeaponCard({ weapon, index }) {
   
 
-
-console.log(weapon.weaponStats)
+try {
+  if(weapon.weaponStats){
+  var stats = weapon.weaponStats
+  }
+  
+} catch (error) {
+  console.log(error)
+}
   
   return (
     <div class="col-md-4">
@@ -71,8 +77,12 @@ console.log(weapon.weaponStats)
             </div>
 
           </div>
-
-          <WeaponFooter />
+                  {
+                    stats!=null?
+                    <WeaponFooter stats={stats}/>
+                    : null
+                  }
+          
           
          
         </div>

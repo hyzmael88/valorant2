@@ -9,7 +9,6 @@ function WeaponsList() {
   useEffect(() => {
     fetchWeapons();
   }, []);
-  console.log(weapons);
 
   return (
     <div className="container mt-5 mb-4 text-center">
