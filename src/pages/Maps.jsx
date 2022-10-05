@@ -1,8 +1,11 @@
 import React from 'react'
+import MapsList from '../components/MapsList'
 
 function Maps() {
   return (
-    <div>Maps</div>
+    <div>
+      <MapsList />
+    </div>
   )
 }
 

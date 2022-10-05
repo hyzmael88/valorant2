@@ -10,15 +10,10 @@ import Footer from './components/Footer'
 import AppLevelContext from './context/AppLevelContext'
 import {useContext, useEffect} from 'react'
 import Agents from './pages/Agents'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  
-  const {fetchAgents, agents} = useContext(AppLevelContext)
-
-  useEffect(()=>{
-    fetchAgents()
-  }, [])
-
+ 
   return (
     <div className="App">
       <header>
@@ -26,7 +21,7 @@ function App() {
       </header>
       <Routes>
         <Route path='/' element={<Home  />}/>
-        <Route path='/agents' element={<Agents agents = {agents}/>}/>
+        <Route path='/agents' element={<Agents />}/>
         <Route path='/weapons' element={<Weapons/>}/>
         <Route path='/maps' element={<Maps/>}/>
       </Routes>

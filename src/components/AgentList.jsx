@@ -1,23 +1,23 @@
-import { useContext } from 'react'
-import AppLevelContext from '../context/AppLevelContext'
-import AgentCard from './AgentCard'
+import { useContext, useEffect } from "react";
+import AppLevelContext from "../context/AppLevelContext";
+import AgentCard from "./AgentCard";
 
 function AgentList() {
-    const {agents} = useContext(AppLevelContext)
-  return (
-    <div className='container mt-4 mb-4 text-center' >
-        <div className='row'>
-            {agents.map((agent, index) =>(
-                
-            <AgentCard agent = {agent} index={index} />
-        ))}
-            
-        
+  const { agents, fetchAgents } = useContext(AppLevelContext);
 
-        </div>
-       
+  useEffect(() => {
+    fetchAgents();
+  }, []);
+  console.log(agents);
+  return (
+    <div className="container mt-5 mb-4 text-center">
+      <div className="row">
+        {agents.map((agent, index) => (
+          <AgentCard agent={agent} index={index} />
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
-export default AgentList
+export default AgentList;

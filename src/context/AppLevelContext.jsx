@@ -15,6 +15,14 @@ export const AppLevelProvider = ({children}) => {
         const response = await axios.get(`${API}/agents`)
         setAgents(response.data.data)
     }
+    const fetchWeapons = async() =>{
+        const response = await axios.get(`${API}/weapons`)
+        setWeapons(response.data.data)
+    }
+    const fetchMaps = async() =>{
+        const response = await axios.get(`${API}/maps`)
+        setMaps(response.data.data)
+    }
 
     return(
         <AppLevelContext.Provider value={{
@@ -24,7 +32,9 @@ export const AppLevelProvider = ({children}) => {
             setAgents,
             setMaps,
             setWeapons,
-            fetchAgents
+            fetchAgents,
+            fetchMaps,
+            fetchWeapons
 
         }}>{children}</AppLevelContext.Provider>
     )

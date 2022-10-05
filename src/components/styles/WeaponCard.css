@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.card-list {
+    max-width: 300px;
+}
+
+.card, .card-body {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.card {
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-image{
+    display: block;
+    position: relative;
+    height: 200px;
+    max-width: 100%;
+}
+
+.card-image img{
+    max-height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.card-body {
+    padding: 20px 28px;
+}
+
+.card-body .date {
+    font-weight: bolder;
+}
+
+.card-body h2 {
+    font-size: 1.8em;
+    margin: 2px auto 12px;
+}
+
+.card-body p {
+    color: gray;
+    font-size: 1.1em;
+    line-height: 22px;
+    text-align: center;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   
+}
+.card-footer #titulo{
+    color: #fff;
+}
+
+
+
+
+
+.card:nth-child(1) .card-footer {
+    background: #FF4654;
+    height: 200px;;
+}
+
+.card:nth-child(1) .date {
+    color: #FF4654;
+}
+
+.audio{
+    width: 100%;
+}
+#voice{
+    width: 100%;
+}
+#voice-label {
+    float: left;
+}
+
+.carousel{
+    height: 160px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    position: relative;
+    left: -30px;
+   }
+   
+   .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+     position: relative;
+    right: -30px;
+   }
