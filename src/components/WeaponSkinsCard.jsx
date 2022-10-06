@@ -15,6 +15,7 @@ function WeaponSkinsCard({ skin, index }) {
     <div class="carousel-item ">
       <p className="mt-1">{skin.displayName}</p>
       <img
+      id="mapIcon"
         class="d-block w-100"
         src={skin.displayIcon}
         alt="Display Icon"

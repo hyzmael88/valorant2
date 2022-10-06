@@ -3,8 +3,6 @@ import MapCard from "./MapCard";
 import { useContext, useEffect } from "react";
 import AppLevelContext from "../context/AppLevelContext";
 
-
-
 function MapsList() {
   const { maps, fetchMaps } = useContext(AppLevelContext);
 
@@ -13,9 +11,12 @@ function MapsList() {
   }, []);
   console.log(maps);
   return (
-    <div>
-      MapsList
-      <MapCard maps={maps} />
+    <div className="container mt-5 mb-4 text-center">
+      <div className="row">
+      {maps.map((map, index) => (
+        <MapCard map={map} index = {index} />
+      ))}
+   </div>
     </div>
   );
 }
