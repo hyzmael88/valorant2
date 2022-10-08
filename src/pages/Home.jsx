@@ -69,8 +69,8 @@ function Home() {
                 </div>
             </div>
 
-             <footer>
-                <div className="autor">
+             <footer id='home'>
+                <div className="autor" id='autor-home'>
                     <p>Riot games, inc, riot games, VALORANT, and any associated logos are trademarks, service marks, and/or registered trademarks of riot games, inc.</p>
                 </div> 
             </footer>
