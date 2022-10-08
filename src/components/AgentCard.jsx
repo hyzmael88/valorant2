@@ -13,29 +13,29 @@ function AgentCard({ agent, index }) {
   {
     if (agent.isPlayableCharacter == true) {
       return (
-        <div class="col-md-4">
-          <div class="card-list">
-            <div class="card h-100 mb-4">
-              <div class="card-image">
+        <div className="col-md-4">
+          <div className="card-list">
+            <div className="card h-100 mb-4">
+              <div className="card-image">
                 <img src={agent.fullPortrait} alt="agente" />
               </div>
 
-              <div class="card-body">
-                <span class="date">Agent's Name</span>
+              <div className="card-body">
+                <span className="date">Agent's Name</span>
                 <h2>{agent.displayName}</h2>
                 <span>{agent.role.displayName}</span>
                 <hr></hr>
 
                 <div
                   id={`carouselExampleFade${index}`}
-                  class="carousel slide carousel-fade"
+                  className="carousel slide carousel-fade"
                   data-bs-ride="carousel"
                 >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
+                  <div className="carousel-inner">
+                    <div className="carousel-item active">
                       <p>{agent.description.substring(0, 250)}</p>
                     </div>
-                    <div class="carousel-item">
+                    <div className="carousel-item">
                       <p>{agent.role.description}</p>
                     </div>
                    
@@ -43,30 +43,30 @@ function AgentCard({ agent, index }) {
 
 
                   <button
-                    class="carousel-control-prev"
+                    className="carousel-control-prev"
                     type="button"
                     data-bs-target={`#carouselExampleFade${index}`}
                     data-bs-slide="prev"
                     
                   >
                     <span
-                      class="carousel-control-prev-icon"
+                      className="carousel-control-prev-icon"
                       aria-hidden="true"
                       
                     ></span>
-                    <span class="visually-hidden" >Previous</span>
+                    <span className="visually-hidden" >Previous</span>
                   </button>
                   <button
-                    class="carousel-control-next"
+                    className="carousel-control-next"
                     type="button"
                     data-bs-target={`#carouselExampleFade${index}`}
                     data-bs-slide="next"
                   >
                     <span
-                      class="carousel-control-next-icon"
+                      className="carousel-control-next-icon"
                       aria-hidden="true"
                     ></span>
-                    <span class="visually-hidden">Next</span>
+                    <span className="visually-hidden">Next</span>
                   </button>
                 </div>
 
@@ -75,31 +75,31 @@ function AgentCard({ agent, index }) {
                 <div id="voice">
                   <label id="voice-label">Voice:</label>
                   <ReactAudioPlayer
-                    className="audio"
+                    classNameName="audio"
                     src={agent.voiceLine.mediaList[0].wave}
                     controls
                   />
                 </div>
               </div>
 
-              <div class="card-footer">
-                <div class="info">
-                  <div class="value">Q</div>
-                  <div class="type">{agent.abilities[0].displayName}</div>
+              <div className="card-footer">
+                <div className="info">
+                  <div className="value">Q</div>
+                  <div className="type">{agent.abilities[0].displayName}</div>
                 </div>
 
-                <div class="info">
-                  <div class="value">E</div>
-                  <div class="type">{agent.abilities[1].displayName}</div>
+                <div className="info">
+                  <div className="value">E</div>
+                  <div className="type">{agent.abilities[1].displayName}</div>
                 </div>
 
-                <div class="info">
-                  <div class="value">C</div>
-                  <div class="type">{agent.abilities[2].displayName}</div>
+                <div className="info">
+                  <div className="value">C</div>
+                  <div className="type">{agent.abilities[2].displayName}</div>
                 </div>
-                <div class="info">
-                  <div class="value">R</div>
-                  <div class="type">{agent.abilities[3].displayName}</div>
+                <div className="info">
+                  <div className="value">R</div>
+                  <div className="type">{agent.abilities[3].displayName}</div>
                 </div>
               </div>
             </div>

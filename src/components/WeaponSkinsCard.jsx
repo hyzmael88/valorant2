@@ -12,11 +12,11 @@ function WeaponSkinsCard({ skin, index }) {
 
   return skin.displayIcon != null &&
     skin.displayName.substring(0, 8) != "Standard" ? (
-    <div class="carousel-item ">
+    <div className="carousel-item ">
       <p className="mt-1">{skin.displayName}</p>
       <img
       id="mapIcon"
-        class="d-block w-100"
+        className="d-block w-100"
         src={skin.displayIcon}
         alt="Display Icon"
         onClick={handleShow}

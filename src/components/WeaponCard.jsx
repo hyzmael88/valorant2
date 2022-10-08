@@ -18,28 +18,28 @@ try {
 }
   
   return (
-    <div class="col-md-4">
-      <div class="card-list">
-        <div class="card h-100 mb-4">
-          <div class="card-image">
+    <div className="col-md-4">
+      <div className="card-list">
+        <div className="card h-100 mb-4">
+          <div className="card-image">
             <h2 className="mt-4">{weapon.displayName}</h2>
             
-            <span class="date">Weapon's Category</span>
+            <span className="date">Weapon's Category</span>
             <br></br>
             <span>{weapon.category.substring(21, 30)}</span>
             <hr></hr>
           </div>
 
-          <div class="card-body">
+          <div className="card-body">
             <div
               id={`carouselExampleFade${index}`}
-              class="carousel slide carousel-fade"
+              className="carousel slide carousel-fade"
               data-bs-ride="carousel"
             >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
                   <img
-                    class="d-block w-100"
+                    className="d-block w-100"
                     src={weapon.displayIcon}
                     alt="Display Icon"
                   />
@@ -51,28 +51,28 @@ try {
               </div>
 
               <button
-                class="carousel-control-prev"
+                className="carousel-control-prev"
                 type="button"
                 data-bs-target={`#carouselExampleFade${index}`}
                 data-bs-slide="prev"
               >
                 <span
-                  class="carousel-control-prev-icon"
+                  className="carousel-control-prev-icon"
                   aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Previous</span>
+                <span className="visually-hidden">Previous</span>
               </button>
               <button
-                class="carousel-control-next"
+                className="carousel-control-next"
                 type="button"
                 data-bs-target={`#carouselExampleFade${index}`}
                 data-bs-slide="next"
               >
                 <span
-                  class="carousel-control-next-icon"
+                  className="carousel-control-next-icon"
                   aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Next</span>
+                <span className="visually-hidden">Next</span>
               </button>
             </div>
 

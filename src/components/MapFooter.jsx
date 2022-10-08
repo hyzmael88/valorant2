@@ -3,7 +3,7 @@ import React from 'react'
 function MapFooter({callouts}) {
     try {
         return (
-            <div class="card-footer">
+            <div className="card-footer">
           <ul>
             {
                 callouts != null?

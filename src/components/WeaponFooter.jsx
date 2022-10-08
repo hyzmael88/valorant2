@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 function WeaponFooter({ stats}) {
   return (
-    <div class="card-footer">
+    <div className="card-footer">
       
         {
             <WeaponStatsHeader damage={stats.damageRanges}/>
