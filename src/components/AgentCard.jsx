@@ -75,7 +75,7 @@ function AgentCard({ agent, index }) {
                 <div id="voice">
                   <label id="voice-label">Voice:</label>
                   <ReactAudioPlayer
-                    classNameName="audio"
+                    className="audio"
                     src={agent.voiceLine.mediaList[0].wave}
                     controls
                   />
